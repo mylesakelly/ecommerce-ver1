@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+body, html{ 
+    font-family: montserrat;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("./images/contact-imagee.webp");
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+
+/* .contact-background {
+background-image: url("contact-imagee.webp");
+background-repeat: no-repeat;
+background-position: left center; 
+} */
+/* nav bar styling */
+
+
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+.nav-logo-image {
+    width: 8%;
+    height: 8%;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0rem;
+    overflow: hidden;
+    font-size: 1em;
+    font-weight: 700;
+
+    
+}
+.nav-links-right{
+    list-style-type: none;
+    margin: 0;
+    padding: 0rem;
+    overflow: hidden;
+    font-size: 1em;
+    font-weight: 700;
+}
+.nav-page {
+    display: inline;
+    padding: 1rem;
+}
+.nav-page a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;position: relative;
+color: 
+black;  
+}
+
+/* hover effect for nav links  */
+
+.nav-page a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: 
+    black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-page a:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+/* hover effects for nav links */
+
+/* contact header */
+
+.contact-header {
+    /* margin-top: 30px; */
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+/* contact form section */
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    font-weight: 500px;
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 2px solid black; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: rgb(61, 61, 61);
+    color: white;
+    padding: 12px 20px;
+    border-style: solid;
+    /* border: none; */
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #40e0d0;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    /* transform: translate(80%); */
+    height: 40%;
+    width: 40%;
+    border-radius: 5px;
+    /* background-color: #4eceb8; */
+    padding: 20px;
+  }
+
+
+
+
+/* footer section */
+.footer-container{
+    max-width: 1770px;
+    margin:auto;
+    padding: 3rem;
+}
+
+.row{
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+    
+}
+.footer {
+    background-color: #24262b;
+    padding: 70 px 0;
+    line-height: 1.5;
+
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 5rem;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 3rem;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #4eceb8;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #ffff;
+    padding-left: 8px;
+
+}
+.footer-col .social-links .social-icons{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 3 10px;
+
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links .social-icons:hover{
+  color: #4eceb8;
+   background-color: white;  
+} 
+
+/* footer section */
