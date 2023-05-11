@@ -34,7 +34,7 @@ nav {
     align-items: center;
     /* width: 100%; */
     /* position: sticky; */
-    padding: 1rem;
+    /* padding: 1rem; */
     /* border: 2px solid black; */
 
     @media only screen and (max-width: 324px){
@@ -45,12 +45,17 @@ nav {
     }
 }
 .nav-logo-image {
-    width: 10%;
-    height: 10%;
-    @media only screen and (max-width: 768px){
-        width: 20%;
-        height: 20%; 
+    width: 5%;
+    height: 5%;
+}
+@media(max-width: 324px){
+    .nav-logo-image{
+        width: 30%;
+        height: 30%;
+        display: flex;
+        align-items: center;
     }
+   
 }
 
 .nav-links {
@@ -62,7 +67,7 @@ nav {
     padding: 0;
     overflow: hidden;
     /* background-color: #40e0d0; */
-    font-size: 1.2em;
+    font-size: .8rem;
     font-weight: 700;
     @media only screen and (max-width: 324px){
        
@@ -82,8 +87,8 @@ nav-page {
     display: inline-block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
-    margin: 5rem;
+    /* padding: 14px 16px; */
+    margin: 2rem;
     /* padding-right: 5rem;
     padding-left: 5rem; */
     text-decoration: none;
@@ -121,6 +126,12 @@ black;
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+.user-icons{
+    margin-right: 4rem;
+    /* display: flex;
+    justify-content: space-between; */
+
+}
 /* hamburger menu styling */
 
 .hamburger{
@@ -134,8 +145,9 @@ black;
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #4eceb8;;
-}
+    background-color: #40e0d0;
+    }
+
 @media(max-width: 768px) {
     .hamburger{
         display: block;
@@ -175,6 +187,7 @@ black;
 
 
 
+
 /* hover effects for nav links */
 
 /* header section */
@@ -188,6 +201,11 @@ h1{
 
 
 /* products section */
+/* #product-list a {
+    display: block;
+    list-style-type: none;
+    align-items: center;
+} */
 h2{
     text-align: center;
     margin-top: 1rem;
@@ -204,10 +222,7 @@ h2{
     @media only screen and (max-width: 768px){
         padding-bottom: 0rem;
     }
-    
-
-    /* padding: 1rem; */
-    
+        
 }
 #product-list li{
     /* margin-top: 2rem; */

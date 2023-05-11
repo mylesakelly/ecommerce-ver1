@@ -61,10 +61,9 @@ productContainers.forEach((item, i) => {
      title.textContent = product.title;
      const description = document.createElement('h4');
      description.textContent = product.description;
-     const price = document.createElement('a');
-     price.href = "./cart.html";
-      const icon = document.createElement('i');
-      icon.class = "fa fa-cart-plus";
+     const price = document.createElement('p');
+    //  price.href = "./cart.html";
+  
 
      price.textContent = `$${product.price.toFixed(2)}`;
      
