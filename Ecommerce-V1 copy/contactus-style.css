@@ -168,6 +168,8 @@ black;
         text-align: center;
         transition: 0.3s;
         margin: 1rem;
+        z-index: 9999;
+
     }
 
     .nav-page {
@@ -227,21 +229,30 @@ input[type=text], select, textarea {
     flex-direction: row;
     justify-content: space-around;
     grid-gap: 4rem;
-    
-    /* flex-wrap: wrap; */
-
-
   }
+  @media(max-width: 324px) {
+    .flex-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 2rem;
+    }
+  }
+  @media(max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 2rem;
+    }
+  }
+
   .contact-info {
     /* margin-right: 2rem; */
     margin-top: 2rem;
     /* background-color: #40e0d0; */
     color: black;
     padding: auto;
-  }
-  .contact-info, h1 {
-    /* font-weight: 600;
-    font-size: 5rem; */
   }
   .container {
     margin-top: 2rem;

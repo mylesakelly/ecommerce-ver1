@@ -67,30 +67,23 @@ nav {
     /* background-color: #40e0d0; */
     font-size: .8rem;
     font-weight: 700;
-    @media only screen and (max-width: 324px){
-       
-    }
 
     
 }
 nav-page {
     display: inline;
     padding: 1rem;
-    @media only screen and (max-width: 324px){
-     
-        }
     }
 
 .nav-page a {
     display: inline-block;
     color: black;
     text-align: center;
-    /* padding: 14px 16px; */
+    
     margin: 2rem;
-    /* padding-right: 5rem;
-    padding-left: 5rem; */
+   
     text-decoration: none;
-    /* display: inline-block; */
+    
 position: relative;
 color: 
 black;  
@@ -170,6 +163,7 @@ black;
         text-align: center;
         transition: 0.3s;
         margin: 1rem;
+        z-index: 9999;
     }
 
     .nav-page {
@@ -194,6 +188,12 @@ black;
     height: 30rem;
     object-fit: scale-down;
 }
+@media(max-width: 324px){
+    .hero-image {
+        height: 100%;
+    }
+    }
+
 .hero-text {
     position: absolute;
     top: 45%;
@@ -202,14 +202,13 @@ black;
     font-size: 2.5rem;
     color: white;
    }
- @media(max-width: 324){
-    .hero-text {
-        /* top: 20%;
-        left: 50%; */
-        transform: translateX(-50%);
-        font-size: .5rem;
-        margin: 1rem;
-        text-align: center;
+ @media(max-width: 324px){
+    .hero-text, h1 {
+        position: absolute;
+        top: 45%;
+        left: 40%;
+        transform: translate(-300%, -300%);
+        font-size: 1.5rem;
         color: white;
  }  
 }
@@ -249,6 +248,15 @@ black;
   -webkit-user-select: none;
   touch-action: manipulation;
 }
+@media(max-width: 324px){
+    .button-56 {
+        margin-top: 1.5rem;
+        font-size: 14px;
+        height: 40px;
+        line-height: 30px;
+        padding: 0 15px;
+    }
+}
 
 .button-56:after {
   background-color: #111;
@@ -263,6 +271,12 @@ black;
   transform: translate(8px, 8px);
   transition: transform .2s ease-out;
   z-index: -1;
+}
+@media(max-width: 324px){
+    .button-56:after {
+            height: 40px;
+            transform: translate(6px, 6px);
+    }
 }
 
 .button-56:hover:after {
@@ -290,6 +304,11 @@ black;
     display: flex;
     justify-content: center;
     padding: 2rem;
+}
+@media(max-width: 324px) {
+ .slideshow-header {
+    padding: 3rem;
+ }
 }
 .product {
     position: relative;
