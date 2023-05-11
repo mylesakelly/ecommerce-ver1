@@ -15,7 +15,7 @@ hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 })
 //click event listener is used to execute this function
-//when hamburger is clicked the code in the function will toggle the active class because it is present in the css
+//when hamburger is clicked the code in the function will toggle the active class is present in the css
 
 document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
   hamburger.classList.remove("active");

@@ -205,6 +205,11 @@ input[type=text], select, textarea {
     margin-bottom: 16px; /* Bottom margin */
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
   }
+  @media (max-width: 324px) {
+    input[type=text], select, textarea {
+        font-size: 14px;
+    }
+  }
   
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
@@ -216,6 +221,13 @@ input[type=text], select, textarea {
     border-radius: 2rem;
     cursor: pointer;
     opacity: 100%;
+  }
+  @media (max-width: 324px) {
+    input[type=submit] {
+        font-size: 14px;
+        padding: 10px 20px;
+        border-radius: 1rem;
+    }
   }
   
   /* When moving the mouse over the submit button, add a darker green color */
