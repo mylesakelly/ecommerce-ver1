@@ -2,9 +2,10 @@
     {
       "id": 1,
       "title": "Ruby Rubber Tree",
-      "description": "The Ruby Rubber Tree is easy for beginners and a great starter plant! They can quickly grow up to 8' inside and do best in bright to moderate indirect light.",
+      "description": "The Ruby Rubber Tree is easy for beginners! Grow best in bright to moderate indirect light.",
       "price": 19.99,
-      "image": "./images/product-1.webp"
+      "image": "./images/product-1.webp",
+      "icon": " "
     
     },
     {
@@ -17,7 +18,7 @@
     {
       "id": 3,
       "title": "Neoregelia Bromeliad",
-      "description": "The Neoregelia Bromeliad is a special bromeliad because they grow short and wide. They are a statement piece in any space.",
+      "description": "A special bromeliad because they grow short and wide. They are great for any space.",
       "price": 39.99,
       "image": "./images/product-3.webp"
     },
@@ -38,28 +39,28 @@
       {
         "id": 6,
         "title": "ZZ Plant",
-        "description": "This is a hardy and low-maintenance tropical plant with glossy, dark green leaves that can thrive in low light conditions.",
+        "description": "This is a hardy and low-maintenance tropical plant with glossy, dark green leaves like low light conditions.",
         "price": 50.99,
         "image": "./images/product-6.webp"
       },
       {
         "id": 7,
         "title": "Goldon Pothos",
-        "description": "This is a popular and easy-to-care-for trailing plant with heart-shaped leaves featuring variegation in shades of green and yellow.",
+        "description": "This is a popular and easy-to-care-for plant with heart-shaped leaves that are green and yellow.",
         "price": 15.99,
         "image": "./images/product-7.webp"
       },
       {
         "id": 8,
         "title": "Philodendron Birkin",
-        "description": "This plants foliage becomes more variegated as they mature and has an upright growth habit. As they unfurl, their leaves show tinges of pink and red.",
+        "description": "More variegated as they mature and has an upright growth habit. Leaves become pink and red at maturity.",
         "price": 20.99,
         "image": "./images/product-8.webp"
       },
       {
         "id": 9,
         "title": "English Ivy Green Ideal",
-        "description": "An ideal trailing plant for indoor or outdoor settings with its elegant, evergreen foliage that can be grown in a variety of conditions and can also help purify the air.",
+        "description": "An ideal trailing plant for indoor or outdoor settings. Also is a great plant for purifying the air.",
         "price": 20.99,
         "image": "./images/product-9.webp"
       },
@@ -73,14 +74,14 @@
       {
         "id": 11,
         "title": "Marginata Cane Dragon Tree (Dracaena)",
-        "description": "A striking and low-maintenance plant with thin, spiky leaves that feature a red margin, making it a popular choice for indoor décor.",
+        "description": "A striking and low-maintenance plant with thin, spiky leaves that feature a red margin. Great addition to any space.",
         "price": 49.99,
         "image": "./images/product-11.webp"
       },
       {
         "id": 12,
         "title": "Bird of Paradise",
-        "description": "A striking tropical plant with large, ornamental leaves and colorful, bird-shaped flowers that resemble a bird in flight.",
+        "description": "A striking tropical plant with large, ornamental leaves and colorful, bird-shaped flowers.",
         "price": 113.99,
         "image": "./images/product-12.webp"
       }

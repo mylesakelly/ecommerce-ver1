@@ -7,17 +7,11 @@
 body, html{ 
     font-family: montserrat;
     font-family: 'Poppins', sans-serif;
-    background-image: url("./images/contact-imagee.webp");
+    background-image: url("./images/contact-img.jpg");
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: center;
+    
 }
-
-
-/* .contact-background {
-background-image: url("contact-imagee.webp");
-background-repeat: no-repeat;
-background-position: left center; 
-} */
 /* nav bar styling */
 
 
@@ -28,48 +22,70 @@ header {
     justify-content: center;
     margin-top: 0;
 }
+
 nav {
     background-color: white;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 1rem;
+    @media only screen and (max-width: 324px){
+
+    }
+    @media only screen and (max-width: 324px){
+  
+    }
 }
 .nav-logo-image {
-    width: 8%;
-    height: 8%;
+    width: 10%;
+    height: 10%;
+
 }
 
 .nav-links {
+    line-height: 24px;
+    display: flex;
+    justify-content: space-evenly;
     list-style-type: none;
     margin: 0;
-    padding: 0rem;
+    padding: 0;
     overflow: hidden;
-    font-size: 1em;
+    /* background-color: #40e0d0; */
+    font-size: 1.2em;
     font-weight: 700;
-
-    
+    @media only screen and (max-width: 324px){
+       
 }
-.nav-links-right{
-    list-style-type: none;
-    margin: 0;
-    padding: 0rem;
-    overflow: hidden;
-    font-size: 1em;
-    font-weight: 700;
 }
-.nav-page {
+nav-page {
     display: inline;
     padding: 1rem;
-}
+    @media only screen and (max-width: 324px){
+    
+        }
+    }
+
 .nav-page a {
     display: inline-block;
     color: black;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;position: relative;
+    margin: 5rem;
+    /* padding-right: 5rem;
+    padding-left: 5rem; */
+    text-decoration: none;
+    /* display: inline-block; */
+position: relative;
 color: 
 black;  
+@media only screen and (max-width: 324px){
+     margin: 1rem;
+     color:white;
+}
+@media only screen and (max-width: 768px){
+    margin: 1rem;
+    color:white;
+}
 }
 
 /* hover effect for nav links  */
@@ -92,25 +108,74 @@ black;
     transform: scaleX(1);
     transform-origin: bottom left;
 }
-/* hover effects for nav links */
+/* hamburger menu styling */
 
-/* contact header */
-
-.contact-header {
-    /* margin-top: 30px; */
-    display: flex;
-    justify-content: center;
-    font-size: large;
+.hamburger{
+    display: none;
+    cursor: pointer;
 }
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+@media(max-width: 768px) {
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-links{
+        position:fixed;
+        left: -150%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        margin: 1rem;
+    }
+
+    .nav-page {
+        margin: 16px 0;
+    }
+
+    .nav-links.active, .nav-links-right.active {
+        left: 0;
+    }
+}
+
+.contact-hero {
+    height: 50%;
+    width: 100%;
+}
+
+
 /* contact form section */
+
+
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
+    
     font-weight: 500px;
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */ 
     border: 2px solid black; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
+    border-radius: 2rem; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
@@ -124,8 +189,9 @@ input[type=text], select, textarea {
     padding: 12px 20px;
     border-style: solid;
     /* border: none; */
-    border-radius: 4px;
+    border-radius: 2rem;
     cursor: pointer;
+    opacity: 100%;
   }
   
   /* When moving the mouse over the submit button, add a darker green color */
@@ -134,14 +200,45 @@ input[type=text], select, textarea {
   }
   
   /* Add a background color and some padding around the form */
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    grid-gap: 4rem;
+    
+    /* flex-wrap: wrap; */
+
+
+  }
+  .contact-info {
+    /* margin-right: 2rem; */
+    margin-top: 2rem;
+    /* background-color: #40e0d0; */
+    color: black;
+    padding: auto;
+  }
+  .contact-info, h1 {
+    /* font-weight: 600;
+    font-size: 5rem; */
+  }
   .container {
+    margin-top: 2rem;
+    background-color: black;
+    opacity: 70%;
     /* transform: translate(80%); */
     height: 40%;
     width: 40%;
-    border-radius: 5px;
+    border-radius: 2rem;
     /* background-color: #4eceb8; */
     padding: 20px;
+    display: block;
+    align-items: center;
+    margin-bottom: 6rem;
+    color:white;
+    text-align: center;
+    box-shadow: 0 7px 7px rgb(55, 55, 55);
   }
+
 
 
 

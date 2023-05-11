@@ -1,4 +1,26 @@
-// // product slider js
+
+// hamburger menu
+
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+
+
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navLinks.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+  hamburger.classList.remove("active");
+  navLinks.classList.remove("active");
+}))
+
+
+
+
+
+// product slider js
 
 const productContainers = [...document.querySelectorAll('.product-container')];
 const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
@@ -20,6 +42,8 @@ productContainers.forEach((item, i) => {
 
 
 
+
+
  // Fetch the JSON file
  fetch('products.json')
  .then(response => response.json())
@@ -37,7 +61,11 @@ productContainers.forEach((item, i) => {
      title.textContent = product.title;
      const description = document.createElement('h4');
      description.textContent = product.description;
-     const price = document.createElement('p');
+     const price = document.createElement('a');
+     price.href = "./cart.html";
+      const icon = document.createElement('i');
+      icon.class = "fa fa-cart-plus";
+
      price.textContent = `$${product.price.toFixed(2)}`;
      
      // Append the product information to the list item
